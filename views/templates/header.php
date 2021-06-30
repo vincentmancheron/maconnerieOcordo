@@ -14,4 +14,4 @@
 
     </header>
     <main>
-    <?php include(dirname(__FILE__).'/navBar.php)') ?>
+    <?php include('navBar.php') ?>

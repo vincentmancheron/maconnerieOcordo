@@ -6,19 +6,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto w-75 justify-content-around">
-
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Accueil</a>
+                    <a class="nav-link" href="index.php?action=0">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Qui sommes nous</a>
+                    <a class="nav-link" href="index.php?action=1">Qui sommes nous</a>
                 </li>
-                <div><img src="/assets/img/Logo.png" height="50" width="50"></div>
+                <div><img src="/assets/img/logo.png" height="50" width="50"></div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos clients témoignent</a>
+                    <a class="nav-link" href="index.php?action=2">Nos clients témoignent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="index.php?action=3">Contact</a>
                 </li>
             </ul>
         </div>
