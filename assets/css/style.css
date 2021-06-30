@@ -1,0 +1,27 @@
+/* Page 0 */
+/* #p1 {
+    background-color: aqua;
+} */
+h1 {
+    color: white;
+    background: url('/assets/img/bannière_occordo.jpg');
+    background-size: cover;
+    filter: brightness(70%);
+    height: 97vh;
+    /* A ajuster par rapport à la navBar. */
+}
+
+.desc {
+    color: white;
+    background-color: #333333;
+    margin: 0 auto;
+}
+
+.desc:first-of-type {
+    border-radius: 3em 3em 0 0;
+}
+
+.desc:last-of-type{
+    border-radius: 0 0 3em 3em;
+}
+/* End Page 0 */
