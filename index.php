@@ -24,17 +24,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto w-75 justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link" href="#index.php?action=0">Accueil</a>
+                            <a class="nav-link" href="index.php?action=0">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#index.php?action=1">Qui sommes nous</a>
+                            <a class="nav-link" href="index.php?action=1">Qui sommes nous</a>
                         </li>
                         <div><img src="/assets/img/logo.png" height="50" width="50"></div>
                         <li class="nav-item">
-                            <a class="nav-link" href="#index.php?action=2">Nos clients témoignent</a>
+                            <a class="nav-link" href="index.php?action=2">Nos clients témoignent</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#index.php?action=3">Contact</a>
+                            <a class="nav-link" href="index.php?action=3">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -45,8 +45,23 @@
 // include(dirname(__FILE__).'/views/templates/header.php)');
 
 $website = simplexml_load_file('models/source.xml');
-echo $website->page[0]->content;
+switch ($_GET['action']) {
+    case '':
+        echo $website->page[0]->content;
+        break;
+    case 0:
+        echo $website->page[0]->content;
+        break;
+    case 1:
+        echo $website->page[1]->content;
+        break;
+    case 2:
+        echo $website->page[2]->content;
+        break;
+    case 3:
+        echo $website->page[3]->content;
+}
 
 // include(dirname(__FILE__).'/views/templates/footer.php)');
-echo $_SERVER['REQUEST_URI'];
+
 ?>
