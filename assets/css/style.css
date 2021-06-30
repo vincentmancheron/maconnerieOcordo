@@ -23,7 +23,7 @@
 /* #p1 {
     background-color: aqua;
 } */
-h1 {
+#p0 h1 {
     color: white;
     background: url('/assets/img/bannière_occordo.jpg');
     background-size: cover;
@@ -32,17 +32,17 @@ h1 {
     /* A ajuster par rapport à la navBar. */
 }
 
-.desc {
+#p0 .desc {
     color: white;
     background-color: #333333;
     margin: 0 auto;
 }
 
-.desc:first-of-type {
+#p0 .desc:first-of-type {
     border-radius: 3em 3em 0 0;
 }
 
-.desc:last-of-type {
+#p0 .desc:last-of-type {
     border-radius: 0 0 3em 3em;
 }
 
