@@ -97,10 +97,10 @@ bénéficier de prix très compétitifs et d’un excellent rapport qualité/pri
         <label>Votre numéro de téléphone * :</label>
         <input name="your-tel-615" value="" size="40" class="form-control text tel validates-as-required validates-as-tel"   type="tel">
         <label>Sujet :</label>
-        <input name="your-subject" value="" size="40" class="form-control text"  type="text">
-        <label>Votre ville :</label>
         <input name="your-ville" value="" size="40" class="form-control text"  type="text">
         <label>Votre message * :</label>
+        <input name="your-subject" value="" size="40" class="form-control text"  type="text">
+        <label>Votre ville :</label>
         <textarea name="your-message" cols="40" rows="10" class="form-control textarea validates-as-required"  ></textarea>
         <input type="submit" name="send" value="Envoyer"/>
     </form>
