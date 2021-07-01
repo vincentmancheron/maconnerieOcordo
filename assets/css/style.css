@@ -230,4 +230,19 @@ footer a:hover {
     color: red;
 }
 
+@media (min-width: 992px){
+    .infos {
+        text-align: start !important;
+    }
+
+    .imgSocial {
+        text-align: end !important;
+    }
+
+    .social {
+        text-align: end !important;
+        margin-right: 37px !important; 
+    }
+}
+
 /* End Footer */
