@@ -81,3 +81,15 @@
 }
 
 /* End Page 0 */
+
+/* Footer */
+footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+
+/* End Footer */
