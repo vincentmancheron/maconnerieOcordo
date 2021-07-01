@@ -6,7 +6,7 @@ if (isset($_GET['action'])) {
             echo '<div id="p0">'.$website->page[0]->content.'</div>';
             break;
         case 1:
-            echo '<div id="p2">'.$website->page[1]->content.'</div>';
+            echo '<div id="p1">'.$website->page[1]->content.'</div>';
             break;
         case 2:
             echo '<div id="p2">'.$website->page[2]->content.'</div>';
