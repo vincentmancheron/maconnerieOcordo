@@ -93,16 +93,16 @@ bénéficier de prix très compétitifs et d’un excellent rapport qualité/pri
 </ul>
 <div id="formControl" role="form-control">
     <form action="#" method="post" class="form" novalidate="novalidate">
-        <label>Votre nom * :</label><input name="your-name" value="" size="40" class="form-control text validates-as-required" type="text" pattern="<?php regAlpha ?>" min="2" max="70" required>
-        <label>Votre email :</label><input name="your-email" value="" size="40" class="form-control text email validates-as-email" type="email" pattern="<?php regEmail ?>" min="2" max="70">
+        <label>Votre nom * :</label><input name="your-name" value="" size="40" class="form-control text validates-as-required" type="text" pattern="<?=regAlpha?>" min="2" max="70" required>
+        <label>Votre email :</label><input name="your-email" value="" size="40" class="form-control text email validates-as-email" type="email" pattern="<?=regEmail?>" min="2" max="70">
         <label>Votre numéro de téléphone * :</label>
-        <input name="your-tel-615" value="" size="40" class="form-control text tel validates-as-required validates-as-tel"   type="tel">
+        <input name="your-tel-615" value="" size="40" class="form-control text tel validates-as-required validates-as-tel" type="tel" pattern="<?=regPhoneNumber?>" min="10" max="10" required>
         <label>Votre ville :</label>
-        <input name="your-ville" value="" size="40" class="form-control text"  type="text">
+        <input name="your-ville" value="" size="40" class="form-control text"  type="text" pattern="<?=regAlpha?>" min="2" max="70">
         <label>Sujet :</label>
-        <input name="your-subject" value="" size="40" class="form-control text"  type="text">
+        <input name="your-subject" value="" size="40" class="form-control text"  type="text" pattern="<?=regAlpha?>" min="2" max="70">
         <label>Votre message * :</label>
-        <textarea name="your-message" cols="40" rows="10" class="form-control textarea validates-as-required"  ></textarea>
+        <textarea name="your-message" cols="40" rows="10" class="form-control textarea validates-as-required" pattern="<?=regAlpha?>" min="25" max="500" required></textarea>
         <input id="buttonSub" type="submit" name="send" value="Envoyer"/>
     </form>
 </div>]]></content>

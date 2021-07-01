@@ -1,0 +1,11 @@
+Bugs: 
+-Regex Front ne marche pas.
+
+A faire (formulaire):
+-Tester la sécurisation Back du formulaire.
+-Contourner en rouge les champs obligatoires du formulaire lorsque pas remplis.
+-Supprimer les espaces, tirets et points potentiels dans les entrées utilisateur pour le numéro de téléphone.
+
+A faire (Autres):
+-S'assurer que le responsive est correct sur sa page.
+-Retravailler la maquette/chercher des idées grpahiques.

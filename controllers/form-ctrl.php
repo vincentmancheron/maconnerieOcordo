@@ -9,6 +9,7 @@ $city = trim(filter_input(INPUT_POST, 'your-ville', FILTER_SANITIZE_STRING, FILT
 $text = trim(filter_input(INPUT_POST, 'your-message', FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
 $vars = ['name'=>$name,'email'=>$email,'phoneNumber'=>$phoneNumber,'subject'=>$subject,'city'=>$city,'text'=>$text];
 $requiredVars = ['name'=>$name,'phoneNumber'=>$phoneNumber,'text'=>$text];
+include(dirname(__FILE__.'/../utils/regex.php'))
 // End Declarations
 
 // Checking:
