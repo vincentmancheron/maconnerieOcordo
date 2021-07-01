@@ -1,0 +1,34 @@
+/* <lg */
+@media (max-width: 991px) {
+    body {
+        font-size: 0.5em;
+    }
+    .navbar-collapse {
+        background-color: black;
+    }
+    #p0 h1 {
+        font-size: 50px;
+        padding-left: 1em;
+    }
+    .desc {
+        width: 75%;
+    }
+    .gallery_box_single {
+        flex-direction: column;
+    }
+    .img {
+        margin: 1em 0;
+    }
+}
+/* End <lg */
+
+/* lg> */
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+    .desc {
+        width: 50%;
+    }
+}
+/* End lg> */
