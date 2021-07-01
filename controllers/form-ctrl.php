@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
                 break;
             case ($value == $text):
-                if(strlen($value) > 500) {
+                if(strlen($value)<25 || strlen($value) > 500) {
                     $error['length'][$key] = "";
                 }
         }
