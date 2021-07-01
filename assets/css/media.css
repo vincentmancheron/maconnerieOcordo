@@ -32,3 +32,11 @@
     }
 }
 /* End lg> */
+
+
+ /* Media navbar landscape */
+@media (orientation:landscape) {
+    .navbar {
+        height: 55px;
+    }
+}
