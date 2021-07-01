@@ -3,13 +3,13 @@
 <footer id="footer" class="bg-dark text-white">
     <div class="container-fluid py-4">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 text-center">
                 <div>Informations pratiques :</div>
                 <div><a href="mailto:maconnerie-ocordo@ocordo.org">maconnerie-ocordo@ocordo.org</a></div>
                 <div><a href="tel:+33322696996">Tel:0322696996</a></div>
             </div>
-            <div class="col-12 col-lg-6 text-end">
-                <div class="me-5">Réseaux</div>
+            <div class="col-12 col-lg-6 text-center">
+                <div class="text-center">Réseaux</div>
                 <div>
                     <a href="https://facebook.com"><img class="img-fluid" src="/assets/img/square-facebook-128.webp" alt="réseau facebook" height="35" width="35"></a>
                     <a href="https://linkedin.com"><img class="img-fluid" src="/assets/img/square-linkedin-128.webp" alt="réseau facebook" height="35" width="35"></a>
