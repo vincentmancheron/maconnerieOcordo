@@ -45,3 +45,13 @@
     border-radius: 0 0 3em 3em;
 }
 /* End Page 0 */
+/* Footer */
+footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+/* End Footer */

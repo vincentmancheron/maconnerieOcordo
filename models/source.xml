@@ -1,3 +1,5 @@
+<?php
+$xmlstr = <<<XML
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet type="text/css" href="/assets/style/css/style.css"?>
 <website>
@@ -108,3 +110,5 @@ bénéficier de prix très compétitifs et d’un excellent rapport qualité/pri
 </div>]]></content>
     </page>
 </website>
+XML;
+?>
