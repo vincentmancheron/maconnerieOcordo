@@ -16,18 +16,23 @@
 .navbar-logo-centered .navbar-nav .nav-link {
     padding: .5em 1em;
 }
+
 /* End NavBar */
 
 /* Page 0 */
 /* #p1 {
     background-color: aqua;
 } */
+
+
 #p0 h1 {
     color: white;
+
     background: url('/assets/img/bannière_occordo.jpg');
     background-size: cover;
     filter: brightness(70%);
     height: 92vh;
+    z-index: -1;
     /* A ajuster par rapport à la navBar. */
 }
 
@@ -41,7 +46,47 @@
     border-radius: 3em 3em 0 0;
 }
 
-#p0 .desc:last-of-type{
+#p0 .desc:last-of-type {
     border-radius: 0 0 3em 3em;
 }
+
+#p0 .img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p0 .caption-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    margin: 0;
+    position: absolute;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(153, 1, 0, 0.8);
+}
+
+#p0 .caption-text:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
 /* End Page 0 */
+
+/* Footer */
+footer a {
+    text-decoration: none !important;
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+
+/* End Footer */

@@ -1,5 +1,5 @@
 <?php
-$website = simplexml_load_file('models/source.xml');
+$website = simplexml_load_file(dirname(__FILE__).'/../models/source.xml');
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 0:
