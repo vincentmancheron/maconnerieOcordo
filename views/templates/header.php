@@ -1,3 +1,4 @@
+<!-- Head -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,9 +14,9 @@
     <title><?=$title?></title>
     <meta name="description" content="Bienvenue à la maçonnerie Ocordo. Besoin d'un devis de construction, de rénovation, d'une étude de terrain,  ? Nous sommes à votre disposition pour répondre à cela !">
 </head>
+<!-- End Head -->
 <body>
-    <header>
-
-    </header>
+    <!-- Ouverture du Main + Navbar -->
     <main>
     <?php include(dirname(__FILE__).'/navBar.php') ?>
+    <!-- Fin Ouverture du Main + Navbar -->

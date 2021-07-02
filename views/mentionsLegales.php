@@ -1,4 +1,5 @@
-<?php 
+<!-- Recréation de la NavBar pour la page Mentions légales: -->
+<?php
     $website = simplexml_load_file(dirname(__FILE__).'/../models/source.xml');
     $home = $website->page[0]->menu;
     $about = $website->page[1]->menu;
@@ -6,7 +7,9 @@
     $contact = $website->page[3]->menu;
     include(dirname(__FILE__).'/templates/header.php'); 
 ?>
+<!-- Fin Recréation de la NavBar pour la page Mentions légales: -->
 
+<!-- Mention légales -->
 <div class="mx-2">
 <h2 class="text-center mb-5">Mentions légales et Conditions d'Utilisation et de Consultation du Présent Site</h2>
 <h3 class="text-decoration-underline">1. Présentation du site</h3>
@@ -28,5 +31,7 @@
 <h3 class="text-decoration-underline">9. Droit applicable et attribution de juridiction</h3>
 <p class="mb-4">Tout litige en relation avec l’utilisation du présent site est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Lille.</p>
 </div>
+<!-- Fin Mentions légales -->
 
+<!-- Footer -->
 <?php include(dirname(__FILE__).'/templates/footer.php'); ?>

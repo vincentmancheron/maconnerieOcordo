@@ -30,5 +30,19 @@
     .desc {
         width: 50%;
     }
+    /* Footer */
+    .infos {
+        text-align: start !important;
+    }
+
+    .imgSocial {
+        text-align: end !important;
+    }
+
+    .social {
+        text-align: end !important;
+        margin-right: 37px !important;
+    }
+    /* End Footer */
 }
 /* End lg> */

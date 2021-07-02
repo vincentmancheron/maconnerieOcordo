@@ -1,9 +1,8 @@
-/* Main CSS */
+/* General */
 body {
     font-family: 'Roboto Slab', serif;
 }
-
-/* End Main CSS */
+/* End General */
 
 /* NavBar */
 .navbar {
@@ -28,11 +27,6 @@ body {
 /* End NavBar */
 
 /* Page 0 */
-/* #p1 {
-    background-color: aqua;
-} */
-
-
 #p0 h1 {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em black;
@@ -90,10 +84,88 @@ body {
     transition: 0.5s;
     transform: scale(1.1);
 }
-
 /* End Page 0 */
+/* Page 1 */
+#p1 {
+    background-color: #E8E8E8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* p3 */
+#p1 h1 {
+    color: #990100;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #707070;
+}
+
+
+@media (max-width:768px) {
+    #p1 #clip {
+        width: 300px;
+        height: auto;
+    }
+}
+
+#p1 h2,
+h3 {
+    color: #707070;
+}
+
+#p1 h2 {
+    font-size: 25px;
+}
+
+#p1 h3 {
+    margin-top: 20px;
+}
+
+#p1 ul {
+    text-align: left;
+    list-style: square;
+    background-color: #333333;
+    color: white;
+    padding: 0;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+/* End Page 1 */
+/* Page 2 */
+#p2 h1 {
+    color: #990100 !important;
+    font-size: 30px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+#p2 h2 {
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+#p2 .desc1 {
+    margin-top: 70px;
+    padding: 30px;
+    color: white;
+    background-color: #333333;
+    margin-bottom: 70px;
+    border-radius: 1em 1em;
+    width: 80%;
+
+}
+
+#p2 .desc2 {
+    padding: 30px;
+    color: white;
+    background-color: #333333;
+    margin-bottom: 70px;
+    border-radius: 1em 1em;
+    width: 80%;
+}
+/* End Page 2 */
+/* Page 3 */
 #p3 {
     display: flex;
     flex-direction: column;
@@ -165,93 +237,7 @@ body {
     align-items: center;
 }
 
-/* end p3 */
-/* Page 1 */
-#p1 {
-    background-color: #E8E8E8;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#p1 h1 {
-    color: #990100;
-    padding-bottom: 10px;
-    border-bottom: 2px dashed #707070;
-}
-
-
-@media (max-width:768px) {
-    #p1 #clip {
-        width: 300px;
-        height: auto;
-    }
-}
-
-#p1 h2,
-h3 {
-    color: #707070;
-}
-
-#p1 h2 {
-    font-size: 25px;
-}
-
-#p1 h3 {
-    margin-top: 20px;
-}
-
-#p1 ul {
-    text-align: left;
-    list-style: square;
-    background-color: #333333;
-    color: white;
-    padding: 0;
-    padding: 50px;
-    border-radius: 15px;
-}
-
-/* End Page 1 */
-/* ================Début Page 3======================= */
-
-#p2 h1 {
-    color: #990100 !important;
-    font-size: 30px !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-}
-
-#p2 h2 {
-    font-weight: bold;
-    margin-bottom: 60px;
-}
-
-#p2 .desc1 {
-    margin-top: 70px;
-    padding: 30px;
-    color: white;
-    background-color: #333333;
-    margin-bottom: 70px;
-    border-radius: 1em 1em;
-    width: 80%;
-
-}
-
-#p2 .desc2 {
-    padding: 30px;
-    color: white;
-    background-color: #333333;
-    margin-bottom: 70px;
-    border-radius: 1em 1em;
-    width: 80%;
-}
-
-
-
-
-/*================= Fin Page 3======================= */
-
+/* End Page 3 */
 /* Footer */
 footer a {
     text-decoration: none !important;
@@ -261,20 +247,4 @@ footer a {
 footer a:hover {
     color: red;
 }
-
-@media (min-width: 992px) {
-    .infos {
-        text-align: start !important;
-    }
-
-    .imgSocial {
-        text-align: end !important;
-    }
-
-    .social {
-        text-align: end !important;
-        margin-right: 37px !important;
-    }
-}
-
 /* End Footer */
