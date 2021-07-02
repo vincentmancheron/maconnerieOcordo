@@ -1,5 +1,5 @@
 <?php
-
+// Génération d'une page:
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 0:

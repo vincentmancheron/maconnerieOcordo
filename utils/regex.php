@@ -1,4 +1,5 @@
 <?php
+// Déclaration des Regex:
 define('regAlpha','[a-zA-Zéèçàùâêîûüëï ,\'"]*');
 define('regNumber','\d{10}');
 define('regPhoneNumber','(0|\+33)[1-9]( *[0-9]{2}){4}');
