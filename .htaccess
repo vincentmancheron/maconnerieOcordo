@@ -1,0 +1,10 @@
+# On suit les liens symboliques 
+Options +FollowSymlinks 
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+# Réécriture de index.html vers index.php 
+RewriteRule ^accueil.html$ /index.php?action=0 [L]
+RewriteRule ^qui-somme-nous.html$ /index.php?action=1 [L]
+RewriteRule ^avis.html$ /index.php?action=2 [L]
+RewriteRule ^contact.html$ /index.php?action=3 [L]
+RewriteRule ^mentions-legales.html$ /views/mentionsLegales.php [L]

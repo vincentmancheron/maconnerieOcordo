@@ -1,5 +1,5 @@
 <?php
-$website = simplexml_load_file(dirname(__FILE__).'/../models/source.xml');
+
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 0:
@@ -12,6 +12,7 @@ if (isset($_GET['action'])) {
             echo '<div id="p2">'.$website->page[2]->content.'</div>';
             break;
         case 3:
+            include(dirname(__FILE__).'/form-ctrl.php');
             echo '<div id="p3">'.$website->page[3]->content.'</div>';
     }
 } else {

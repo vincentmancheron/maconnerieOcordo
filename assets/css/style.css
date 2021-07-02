@@ -85,6 +85,7 @@
     width: 75%;
     opacity: 1;
     transition: 0.5s;
+    transform: scale(1.1);
 }
 
 /* End Page 0 */
@@ -108,6 +109,8 @@
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 7px;
+    width: 50%;
+    align-self: center;
 }
 
 #p3 #gMap {
@@ -125,6 +128,8 @@
 
 #p3 form {
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 #p3 #formControl {
@@ -230,7 +235,7 @@ footer a:hover {
     color: red;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .infos {
         text-align: start !important;
     }
@@ -241,7 +246,7 @@ footer a:hover {
 
     .social {
         text-align: end !important;
-        margin-right: 37px !important; 
+        margin-right: 37px !important;
     }
 }
 

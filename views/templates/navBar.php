@@ -8,17 +8,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto w-75 justify-content-around">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php?action=0">Accueil</a>
+                    <a class="nav-link" href="accueil.html"><?=$home?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php?action=1">Qui sommes nous</a>
+                    <a class="nav-link" href="qui-somme-nous.html"><?=$about?></a>
                 </li>
                 <div><img class=" img-fluid d-none d-lg-block" src="/assets/img/logo.png" height="50" width="50"></div>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php?action=2">Nos clients témoignent</a>
+                    <a class="nav-link" href="avis.html"><?=$opinion?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php?action=3">Contact</a>
+                    <a class="nav-link" href="contact.html"><?=$contact?></a>
                 </li>
             </ul>
         </div>
