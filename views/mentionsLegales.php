@@ -1,4 +1,11 @@
-<?php include(dirname(__FILE__).'/templates/header.php'); ?>
+<?php 
+    $website = simplexml_load_file(dirname(__FILE__).'/../models/source.xml');
+    $home = $website->page[0]->menu;
+    $about = $website->page[1]->menu;
+    $opinion = $website->page[2]->menu;
+    $contact = $website->page[3]->menu;
+    include(dirname(__FILE__).'/templates/header.php'); 
+?>
 
 <div class="mx-2">
 <h2 class="text-center mb-5">Mentions légales et Conditions d'Utilisation et de Consultation du Présent Site</h2>
