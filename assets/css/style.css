@@ -1,4 +1,7 @@
 /* Main CSS */
+body {
+    font-family: 'Roboto Slab', serif;
+}
 
 /* End Main CSS */
 
@@ -111,6 +114,30 @@
     border-radius: 7px;
     width: 50%;
     align-self: center;
+}
+
+#p3 #buttonSub:hover {
+    background-color: #701717;
+}
+
+#tel a {
+    text-decoration: underline;
+    color: #990100;
+}
+
+#tel a:hover {
+    color: #c90404;
+    font-weight: bold;
+}
+
+#email a {
+    text-decoration: underline;
+    color: #990100;
+}
+
+#email a:hover {
+    color: #c90404;
+    font-weight: bold;
 }
 
 #p3 #gMap {
