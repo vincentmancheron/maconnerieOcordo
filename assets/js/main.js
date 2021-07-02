@@ -89,7 +89,7 @@ nameInput.addEventListener('keyup', (event) => {
     } else {
         BtnSubmit.removeAttribute("disabled");
     }
-    console.log(error)
+
 });
 
 mailInput.addEventListener('keyup', (event) => {
@@ -122,7 +122,7 @@ mailInput.addEventListener('keyup', (event) => {
     } else {
         BtnSubmit.removeAttribute("disabled");
     }
-    console.log(error)
+
 });
 
 telInput.addEventListener('keyup', (event) => {
@@ -154,7 +154,7 @@ telInput.addEventListener('keyup', (event) => {
     } else {
         BtnSubmit.removeAttribute("disabled");
     }
-    console.log(error)
+
 });
 
 cityInput.addEventListener('keyup', (event) => {
@@ -187,7 +187,7 @@ cityInput.addEventListener('keyup', (event) => {
     } else {
         BtnSubmit.removeAttribute("disabled");
     }
-    console.log(error)
+
 });
 
 subjectInput.addEventListener('keyup', (event) => {
@@ -219,7 +219,7 @@ subjectInput.addEventListener('keyup', (event) => {
     } else {
         BtnSubmit.removeAttribute("disabled");
     }
-    console.log(error)
+
 });
 
 //Selection du numéro du téléphone et mise en place du lien
