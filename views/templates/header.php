@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/media.css">
-    <title>Maçonnerie Ocordo</title>
-    <meta name="description" content="Yo Mec">
+    <title><?=$title?></title>
+    <meta name="description" content="Bienvenue à la maçonnerie Ocordo. Besoin d'un devis de construction, de rénovation, d'une étude de terrain,  ? Nous sommes à votre disposition pour répondre à cela !">
 </head>
 <body>
     <header>
