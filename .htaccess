@@ -4,9 +4,9 @@ RewriteEngine On
 # Réécriture des URL
 
 RewriteRule page-([0-3]).html /index.php?action=$1 [L]
+RewriteRule ^mentions-legales.html$ /views/mentionsLegales.php [L]
 
 # RewriteRule ^accueil.html$ /index.php?action=0 [L]
 # RewriteRule ^qui-somme-nous.html$ /index.php?action=1 [L]
 # RewriteRule ^avis.html$ /index.php?action=2 [L]
 # RewriteRule ^contact.html$ /index.php?action=3 [L]
-# RewriteRule ^mentions-legales.html$ /views/mentionsLegales.php [L]
