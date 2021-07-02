@@ -13,9 +13,9 @@
             <div class="imgSocial col-12 col-lg-6 text-center">
                 <div class="social text-center">Réseaux</div>
                 <div>
-                    <a href="https://facebook.com"><img class="img-fluid" src="/assets/img/logoFacebook" alt="réseau facebook" height="35" width="35"></a>
-                    <a href="https://linkedin.com"><img class="img-fluid" src="/assets/img/logoLinkedin" alt="réseau facebook" height="35" width="35"></a>
-                    <a href="https://twitter.com"><img class="img-fluid" src="/assets/img/logoTwitter" alt="réseau facebook" height="35" width="35"></a>
+                    <a href="https://facebook.com"><img class="img-fluid" src="/assets/img/logoFacebook.webp" alt="réseau facebook" height="35" width="35"></a>
+                    <a href="https://linkedin.com"><img class="img-fluid" src="/assets/img/logoLinkedin.webp" alt="réseau facebook" height="35" width="35"></a>
+                    <a href="https://twitter.com"><img class="img-fluid" src="/assets/img/logoTwitter.webp" alt="réseau facebook" height="35" width="35"></a>
                 </div>
             </div>
             <div class="col-12 col-lg-12 text-center">
