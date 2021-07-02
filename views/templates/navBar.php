@@ -14,7 +14,7 @@
                     <a class="nav-link" href="page-1.html"><?=$about?></a>
                 </li>
                 <!-- Logo: -->
-                <div><img class=" img-fluid d-none d-lg-block" src="/assets/img/logo.png" height="50" width="50"></div>
+                <div><img class=" img-fluid d-none d-lg-block" src="/assets/img/logoOcordo.png" height="50" width="50"></div>
                 <li class="nav-item">
                     <a class="nav-link" href="page-2.html"><?=$opinion?></a>
                 </li>
