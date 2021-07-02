@@ -1,10 +1,11 @@
 //Constante REGEX
-const mailRegex = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}'
+const mailRegex = '^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$'
 const nameRegex = '^[a-zA-Zéèçàùâêîûüëï, \'"]{2,}$'
 const subjectRegex = '^[a-zA-Zéèçàùâêîûüëï, \'"0-9]{2,}$'
-const regNumber = "\\d{10}"
+const regNumber = "^\\d{10}$"
 
 //Déclaration des variables
+let formBloc = document.getElementById("formControl");
 let formEl = document.getElementById("formValidate");
 let nameInput = document.getElementById("your-name");
 let mailInput = document.getElementById("your-email");
@@ -17,7 +18,7 @@ let messageInput = document.getElementById("your-message");
 let telLink = document.getElementById("tel");
 let mailLink = document.getElementById("email");
 let googleMap = document.getElementById("gMap");
-let formBloc = document.getElementById("formControl");
+let BtnSubmit = document.getElementById("buttonSub");
 
 
 //Mise en place des attributs
@@ -52,19 +53,43 @@ cityInput.setAttribute("max", 70);
 
 messageInput.setAttribute("placeholder", "Ecrivez votre message");
 
+let result = 0;
+let error = [];
+let found = 0;
 //Ajout des eventlistener pour vérifier les champs
 nameInput.addEventListener('keyup', (event) => {
 
     if (nameInput.value.match(nameRegex)) {
         nameInput.style.borderColor = "green";
         nameInput.style.borderWidth = "2px";
+        result = error.indexOf('name');
+        if (result != -1) {
+            if (result != -1) {
+                error.splice(result, 1);
+            }
+        }
+
     } else {
         nameInput.style.borderColor = "red";
         nameInput.style.borderWidth = "2px";
+        if (error.indexOf('name') === -1) {
+            error.push('name');
+        }
         if (nameInput.value == "") {
             nameInput.style.borderColor = "";
+            result = error.indexOf('name');
+            if (result != -1) {
+                error.splice(result, 1);
+            }
         }
     }
+
+    if (error != "") {
+        BtnSubmit.setAttribute("disabled", "");
+    } else {
+        BtnSubmit.removeAttribute("disabled");
+    }
+    console.log(error)
 });
 
 mailInput.addEventListener('keyup', (event) => {
@@ -72,13 +97,32 @@ mailInput.addEventListener('keyup', (event) => {
     if (mailInput.value.match(mailRegex)) {
         mailInput.style.borderColor = "green";
         mailInput.style.borderWidth = "2px";
+        result = error.indexOf('mail');
+        if (result != -1) {
+            error.splice(result, 1);
+        }
+
     } else {
         mailInput.style.borderColor = "red";
         mailInput.style.borderWidth = "2px";
+        if (error.indexOf('mail') === -1) {
+            error.push('mail');
+        }
         if (mailInput.value == "") {
             mailInput.style.borderColor = "";
+            result = error.indexOf('mail');
+            if (result != -1) {
+                error.splice(result, 1);
+            }
         }
+
     }
+    if (error != "") {
+        BtnSubmit.setAttribute("disabled", "");
+    } else {
+        BtnSubmit.removeAttribute("disabled");
+    }
+    console.log(error)
 });
 
 telInput.addEventListener('keyup', (event) => {
@@ -86,13 +130,31 @@ telInput.addEventListener('keyup', (event) => {
     if (telInput.value.match(regNumber)) {
         telInput.style.borderColor = "green";
         telInput.style.borderWidth = "2px";
+        result = error.indexOf('tel');
+        if (result != -1) {
+            error.splice(result, 1);
+        }
     } else {
         telInput.style.borderColor = "red";
         telInput.style.borderWidth = "2px";
+        if (error.indexOf('tel') === -1) {
+            error.push('tel');
+        }
         if (telInput.value == "") {
             telInput.style.borderColor = "";
+            result = error.indexOf('tel');
+            if (result != -1) {
+                error.splice(result, 1);
+            }
         }
+
     }
+    if (error != "") {
+        BtnSubmit.setAttribute("disabled", "");
+    } else {
+        BtnSubmit.removeAttribute("disabled");
+    }
+    console.log(error)
 });
 
 cityInput.addEventListener('keyup', (event) => {
@@ -100,13 +162,32 @@ cityInput.addEventListener('keyup', (event) => {
     if (cityInput.value.match(nameRegex)) {
         cityInput.style.borderColor = "green";
         cityInput.style.borderWidth = "2px";
+        result = error.indexOf('city');
+        if (result != -1) {
+            error.splice(result, 1);
+        }
     } else {
         cityInput.style.borderColor = "red";
         cityInput.style.borderWidth = "2px";
+        if (error.indexOf('city') === -1) {
+            error.push('city');
+        }
         if (cityInput.value == "") {
             cityInput.style.borderColor = "";
+            result = error.indexOf('city');
+            if (result != -1) {
+                error.splice(result, 1);
+            }
         }
+
     }
+    if (error != "") {
+
+        BtnSubmit.setAttribute("disabled", "");
+    } else {
+        BtnSubmit.removeAttribute("disabled");
+    }
+    console.log(error)
 });
 
 subjectInput.addEventListener('keyup', (event) => {
@@ -114,13 +195,31 @@ subjectInput.addEventListener('keyup', (event) => {
     if (subjectInput.value.match(subjectRegex)) {
         subjectInput.style.borderColor = "green";
         subjectInput.style.borderWidth = "2px";
+        result = error.indexOf('subject');
+        if (result != -1) {
+            error.splice(result, 1);
+        }
     } else {
         subjectInput.style.borderColor = "red";
         subjectInput.style.borderWidth = "2px";
+        if (error.indexOf('subject') === -1) {
+            error.push('subject');
+        }
         if (subjectInput.value == "") {
             subjectInput.style.borderColor = "";
+            result = error.indexOf('subject');
+            if (result != -1) {
+                error.splice(result, 1);
+            }
         }
+
     }
+    if (error.lenght > 0) {
+        BtnSubmit.setAttribute("disabled", "");
+    } else {
+        BtnSubmit.removeAttribute("disabled");
+    }
+    console.log(error)
 });
 
 //Selection du numéro du téléphone et mise en place du lien
