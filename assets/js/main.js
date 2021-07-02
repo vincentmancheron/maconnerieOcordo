@@ -58,7 +58,6 @@ let error = [];
 let found = 0;
 //Ajout des eventlistener pour vérifier les champs
 nameInput.addEventListener('keyup', (event) => {
-
     if (nameInput.value.match(nameRegex)) {
         nameInput.style.borderColor = "green";
         nameInput.style.borderWidth = "2px";
