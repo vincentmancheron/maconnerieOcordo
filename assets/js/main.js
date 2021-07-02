@@ -1,10 +1,11 @@
 //Constante REGEX
-const mailRegex = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}'
+const mailRegex = '^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$'
 const nameRegex = '^[a-zA-Zéèçàùâêîûüëï, \'"]{2,}$'
 const subjectRegex = '^[a-zA-Zéèçàùâêîûüëï, \'"0-9]{2,}$'
-const regNumber = "\\d{10}"
+const regNumber = "^\\d{10}$"
 
 //Déclaration des variables
+let formBloc = document.getElementById("formControl");
 let formEl = document.getElementById("formValidate");
 let nameInput = document.getElementById("your-name");
 let mailInput = document.getElementById("your-email");
@@ -17,7 +18,7 @@ let messageInput = document.getElementById("your-message");
 let telLink = document.getElementById("tel");
 let mailLink = document.getElementById("email");
 let googleMap = document.getElementById("gMap");
-let formBloc = document.getElementById("formControl");
+let BtnSubmit = document.getElementById("buttonSub");
 
 
 //Mise en place des attributs
@@ -58,11 +59,14 @@ nameInput.addEventListener('keyup', (event) => {
     if (nameInput.value.match(nameRegex)) {
         nameInput.style.borderColor = "green";
         nameInput.style.borderWidth = "2px";
+        BtnSubmit.removeAttribute("disabled");
     } else {
         nameInput.style.borderColor = "red";
         nameInput.style.borderWidth = "2px";
+        BtnSubmit.setAttribute("disabled", "");
         if (nameInput.value == "") {
             nameInput.style.borderColor = "";
+            BtnSubmit.removeAttribute("disabled");
         }
     }
 });
@@ -72,12 +76,17 @@ mailInput.addEventListener('keyup', (event) => {
     if (mailInput.value.match(mailRegex)) {
         mailInput.style.borderColor = "green";
         mailInput.style.borderWidth = "2px";
+        BtnSubmit.removeAttribute("disabled");
+
     } else {
         mailInput.style.borderColor = "red";
         mailInput.style.borderWidth = "2px";
+        BtnSubmit.setAttribute("disabled", "");
         if (mailInput.value == "") {
             mailInput.style.borderColor = "";
+            BtnSubmit.removeAttribute("disabled");
         }
+
     }
 });
 
@@ -86,12 +95,16 @@ telInput.addEventListener('keyup', (event) => {
     if (telInput.value.match(regNumber)) {
         telInput.style.borderColor = "green";
         telInput.style.borderWidth = "2px";
+        BtnSubmit.removeAttribute("disabled");
+        BtnSubmit.setAttribute("disabled", "");
     } else {
         telInput.style.borderColor = "red";
         telInput.style.borderWidth = "2px";
         if (telInput.value == "") {
             telInput.style.borderColor = "";
+            BtnSubmit.removeAttribute("disabled");
         }
+
     }
 });
 
@@ -100,12 +113,16 @@ cityInput.addEventListener('keyup', (event) => {
     if (cityInput.value.match(nameRegex)) {
         cityInput.style.borderColor = "green";
         cityInput.style.borderWidth = "2px";
+        BtnSubmit.removeAttribute("disabled");
     } else {
         cityInput.style.borderColor = "red";
         cityInput.style.borderWidth = "2px";
+        BtnSubmit.setAttribute("disabled", "");
         if (cityInput.value == "") {
             cityInput.style.borderColor = "";
+            BtnSubmit.removeAttribute("disabled");
         }
+
     }
 });
 
@@ -114,12 +131,16 @@ subjectInput.addEventListener('keyup', (event) => {
     if (subjectInput.value.match(subjectRegex)) {
         subjectInput.style.borderColor = "green";
         subjectInput.style.borderWidth = "2px";
+        BtnSubmit.removeAttribute("disabled");
     } else {
         subjectInput.style.borderColor = "red";
         subjectInput.style.borderWidth = "2px";
+        BtnSubmit.setAttribute("disabled", "");
         if (subjectInput.value == "") {
             subjectInput.style.borderColor = "";
+            BtnSubmit.removeAttribute("disabled");
         }
+
     }
 });
 
