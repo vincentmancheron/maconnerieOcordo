@@ -1,6 +1,8 @@
-/* Main CSS */
-
-/* End Main CSS */
+/* General */
+body {
+    font-family: 'Roboto Slab', serif;
+}
+/* End General */
 
 /* NavBar */
 .navbar {
@@ -25,11 +27,6 @@
 /* End NavBar */
 
 /* Page 0 */
-/* #p1 {
-    background-color: aqua;
-} */
-
-
 #p0 h1 {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em black;
@@ -87,58 +84,7 @@
     transition: 0.5s;
     transform: scale(1.1);
 }
-
 /* End Page 0 */
-
-/* p3 */
-#p3 {
-    display: flex;
-    flex-direction: column;
-    background-color: #E8E8E8;
-}
-
-#p3 .contactColor {
-    color: #990100;
-    text-align: center;
-}
-
-#p3 #buttonSub {
-    background-color: #990100;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    width: 50%;
-    align-self: center;
-}
-
-#p3 #gMap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
-}
-
-#p3 .centerText {
-    text-align: center;
-    list-style: none;
-}
-
-#p3 form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-#p3 #formControl {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* end p3 */
 /* Page 1 */
 #p1 {
     background-color: #E8E8E8;
@@ -186,8 +132,7 @@ h3 {
 }
 
 /* End Page 1 */
-/* ================Début Page 3======================= */
-
+/* Page 2 */
 #p2 h1 {
     color: #990100 !important;
     font-size: 30px !important;
@@ -219,12 +164,80 @@ h3 {
     border-radius: 1em 1em;
     width: 80%;
 }
+/* End Page 2 */
+/* Page 3 */
+#p3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+}
 
+#p3 .contactColor {
+    color: #990100;
+    text-align: center;
+}
 
+#p3 #buttonSub {
+    background-color: #990100;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    width: 50%;
+    align-self: center;
+}
 
+#p3 #buttonSub:hover {
+    background-color: #701717;
+}
 
-/*================= Fin Page 3======================= */
+#tel a {
+    text-decoration: underline;
+    color: #990100;
+}
 
+#tel a:hover {
+    color: #c90404;
+    font-weight: bold;
+}
+
+#email a {
+    text-decoration: underline;
+    color: #990100;
+}
+
+#email a:hover {
+    color: #c90404;
+    font-weight: bold;
+}
+
+#p3 #gMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+#p3 .centerText {
+    text-align: center;
+    list-style: none;
+}
+
+#p3 form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#p3 #formControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Page 3 */
 /* Footer */
 footer a {
     text-decoration: none !important;
@@ -234,6 +247,7 @@ footer a {
 footer a:hover {
     color: red;
 }
+<<<<<<< HEAD
 
 @media (min-width: 992px) {
     .infos {
@@ -252,4 +266,6 @@ footer a:hover {
 
 
 
+=======
+>>>>>>> master
 /* End Footer */
